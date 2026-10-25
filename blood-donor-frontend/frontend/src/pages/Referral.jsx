@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import api from "../services/api";
+import { api } from "../services/api";
 
 const Referral = () => {
   const [referral, setReferral] = useState(null);
