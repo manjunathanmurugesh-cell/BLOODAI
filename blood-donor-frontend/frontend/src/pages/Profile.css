@@ -1,0 +1,752 @@
+/* Scoped to .page-profile — converted from the original profile.css */
+
+/* ===================================
+   Google Font
+=================================== */
+
+/* ===================================
+   Global
+=================================== */
+
+:where(.page-profile),
+:where(.page-profile) * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.page-profile {
+    background:#f8f9fa;
+    color:#333;
+}
+
+:where(.page-profile) a {
+    text-decoration:none;
+}
+
+:where(.page-profile) ul {
+    list-style:none;
+}
+
+/* ===================================
+   Navbar
+=================================== */
+
+:where(.page-profile) header {
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:#fff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+:where(.page-profile) .navbar {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+}
+
+:where(.page-profile) .logo {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+:where(.page-profile) .logo i {
+
+    font-size:30px;
+
+    color:#d32f2f;
+
+}
+
+:where(.page-profile) .logo h2 {
+
+    color:#d32f2f;
+
+}
+
+:where(.page-profile) .nav-links {
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+:where(.page-profile) .nav-links a {
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+:where(.page-profile) .nav-links a:hover,
+:where(.page-profile) .nav-links .active {
+
+    color:#d32f2f;
+
+}
+
+:where(.page-profile) .login-btn {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+:where(.page-profile) .login-btn:hover {
+
+    background:#b71c1c;
+
+}
+
+/* ===================================
+   Hero
+=================================== */
+
+:where(.page-profile) .hero {
+
+    margin-top:90px;
+
+    background:linear-gradient(135deg,#d32f2f,#ef5350);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+:where(.page-profile) .hero h1 {
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+:where(.page-profile) .hero p {
+
+    font-size:18px;
+
+}
+
+/* ===================================
+   Profile Card
+=================================== */
+
+:where(.page-profile) .profile-section {
+
+    max-width:1100px;
+
+    margin:60px auto;
+
+    padding:0 20px;
+
+}
+
+:where(.page-profile) .profile-card {
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+:where(.page-profile) .profile-header {
+
+    background:linear-gradient(135deg,#d32f2f,#ef5350);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+:where(.page-profile) .profile-image {
+
+    width:120px;
+
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#d32f2f;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+:where(.page-profile) .profile-header h2 {
+
+    margin-bottom:10px;
+
+}
+
+:where(.page-profile) .status {
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#fff;
+
+    color:#d32f2f;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+
+:where(.page-profile) .profile-body {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    padding:35px;
+
+}
+
+:where(.page-profile) .info-box {
+
+    background:#f8f9fa;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    border-left:5px solid #d32f2f;
+
+}
+
+:where(.page-profile) .info-box h4 {
+
+    color:#d32f2f;
+
+    margin-bottom:10px;
+
+}
+
+:where(.page-profile) .info-box p {
+
+    color:#555;
+
+}
+
+/* ===================================
+   Statistics Section
+=================================== */
+
+:where(.page-profile) .stats-section {
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+    padding:0 20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+:where(.page-profile) .stat-card {
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+:where(.page-profile) .stat-card:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(211,47,47,.18);
+
+}
+
+:where(.page-profile) .stat-card i {
+
+    font-size:42px;
+
+    color:#d32f2f;
+
+    margin-bottom:15px;
+
+}
+
+:where(.page-profile) .stat-card h3 {
+
+    font-size:28px;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+:where(.page-profile) .stat-card p {
+
+    color:#666;
+
+}
+
+/* ===================================
+   Action Buttons
+=================================== */
+
+:where(.page-profile) .action-section {
+
+    max-width:700px;
+
+    margin:50px auto;
+
+    padding:0 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+:where(.page-profile) .action-btn {
+
+    flex:1;
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    padding:16px;
+
+    text-align:center;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+:where(.page-profile) .action-btn:hover {
+
+    background:#b71c1c;
+
+    transform:translateY(-5px);
+
+}
+
+:where(.page-profile) .action-btn.secondary {
+
+    background:#fff;
+
+    color:#d32f2f;
+
+    border:2px solid #d32f2f;
+
+}
+
+:where(.page-profile) .action-btn.secondary:hover {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+}
+
+/* ===================================
+   Hover Animation
+=================================== */
+
+:where(.page-profile) .profile-card,
+:where(.page-profile) .stat-card,
+:where(.page-profile) .action-btn {
+
+    animation:page-profile-fadeUp .7s ease;
+
+}
+
+@keyframes page-profile-fadeUp {
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===================================
+   Footer
+=================================== */
+
+:where(.page-profile) footer {
+
+    background:#b71c1c;
+
+    color:#fff;
+
+    margin-top:80px;
+
+    padding:50px 20px;
+
+}
+
+:where(.page-profile) .footer-content {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+:where(.page-profile) .footer-content h2 {
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+:where(.page-profile) .footer-content p {
+
+    color:#f5f5f5;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+:where(.page-profile) .social-icons {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin:25px 0;
+
+}
+
+:where(.page-profile) .social-icons a {
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#d32f2f;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+:where(.page-profile) .social-icons a:hover {
+
+    background:#ffebee;
+
+    color:#b71c1c;
+
+    transform:translateY(-5px) scale(1.1);
+
+}
+
+:where(.page-profile) footer hr {
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.3);
+
+    margin:25px 0;
+
+}
+
+:where(.page-profile) .copyright {
+
+    font-size:14px;
+
+    color:#fff;
+
+}
+
+/* ===================================
+   Responsive Design
+=================================== */
+
+@media(max-width:992px) {
+  :where(.page-profile) .navbar {
+
+      flex-direction:column;
+
+      gap:20px;
+
+  }
+
+  :where(.page-profile) .nav-links {
+
+      flex-wrap:wrap;
+
+      justify-content:center;
+
+  }
+
+  :where(.page-profile) .profile-body {
+
+      grid-template-columns:1fr;
+
+  }
+
+  :where(.page-profile) .stats-section {
+
+      grid-template-columns:repeat(2,1fr);
+
+  }
+
+  :where(.page-profile) .action-section {
+
+      flex-direction:column;
+
+  }
+}
+
+@media(max-width:768px) {
+  :where(.page-profile) .hero {
+
+      padding:60px 20px;
+
+  }
+
+  :where(.page-profile) .hero h1 {
+
+      font-size:36px;
+
+  }
+
+  :where(.page-profile) .hero p {
+
+      font-size:16px;
+
+  }
+
+  :where(.page-profile) .profile-image {
+
+      width:90px;
+
+      height:90px;
+
+      font-size:42px;
+
+  }
+
+  :where(.page-profile) .profile-header {
+
+      padding:30px 20px;
+
+  }
+
+  :where(.page-profile) .profile-body {
+
+      padding:20px;
+
+  }
+
+  :where(.page-profile) .stats-section {
+
+      grid-template-columns:1fr;
+
+  }
+
+  :where(.page-profile) .action-btn {
+
+      width:100%;
+
+  }
+
+  :where(.page-profile) .footer-content h2 {
+
+      font-size:24px;
+
+  }
+
+  :where(.page-profile) .social-icons {
+
+      flex-wrap:wrap;
+
+  }
+}
+
+@media(max-width:480px) {
+  :where(.page-profile) .navbar {
+
+      padding:15px;
+
+  }
+
+  :where(.page-profile) .logo h2 {
+
+      font-size:22px;
+
+  }
+
+  :where(.page-profile) .hero {
+
+      margin-top:120px;
+
+  }
+
+  :where(.page-profile) .hero h1 {
+
+      font-size:30px;
+
+  }
+
+  :where(.page-profile) .profile-image {
+
+      width:80px;
+
+      height:80px;
+
+      font-size:36px;
+
+  }
+
+  :where(.page-profile) .profile-header h2 {
+
+      font-size:24px;
+
+  }
+
+  :where(.page-profile) .info-box {
+
+      padding:15px;
+
+  }
+
+  :where(.page-profile) .info-box h4 {
+
+      font-size:16px;
+
+  }
+
+  :where(.page-profile) .info-box p {
+
+      font-size:14px;
+
+  }
+
+  :where(.page-profile) .stat-card {
+
+      padding:20px;
+
+  }
+
+  :where(.page-profile) .stat-card h3 {
+
+      font-size:22px;
+
+  }
+}

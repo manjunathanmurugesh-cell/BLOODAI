@@ -1,0 +1,18 @@
+/*
+  Global styles only. Every page's own stylesheet is scoped under a
+  `.page-<name>` wrapper class (see src/pages/*.css) so the nine original
+  stylesheets no longer fight each other.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Every page wrapper fills the screen, like <body> used to. */
+.page {
+  min-height: 100vh;
+}

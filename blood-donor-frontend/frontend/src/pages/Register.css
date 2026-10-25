@@ -1,0 +1,161 @@
+/* Scoped to .page-register — converted from the original register.css */
+
+:where(.page-register),
+:where(.page-register) * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.page-register {
+    background: linear-gradient(135deg, #b71c1c, #e53935);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+:where(.page-register) .container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 650px;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+:where(.page-register) .left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+:where(.page-register) .left-panel h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+:where(.page-register) .left-panel p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+:where(.page-register) .left-panel img {
+    width: 320px;
+    max-width: 100%;
+}
+
+:where(.page-register) .right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+:where(.page-register) .register-box {
+    width: 90%;
+    max-width: 400px;
+}
+
+:where(.page-register) .register-box h2 {
+    font-size: 34px;
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+:where(.page-register) .register-box p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+:where(.page-register) .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+:where(.page-register) .input-box i {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: #c62828;
+}
+
+:where(.page-register) .input-box input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+:where(.page-register) .input-box input:focus {
+    border-color: #c62828;
+    box-shadow: 0 0 8px rgba(198,40,40,0.3);
+}
+
+:where(.page-register) .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #c62828;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+:where(.page-register) .btn:hover {
+    background: #8e0000;
+}
+
+:where(.page-register) .login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+:where(.page-register) .login-link a {
+    color: #c62828;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+:where(.page-register) .login-link a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:900px) {
+  :where(.page-register) .container {
+      flex-direction: column;
+  }
+
+  :where(.page-register) .left-panel {
+      padding:30px;
+  }
+
+  :where(.page-register) .left-panel h1 {
+      font-size:30px;
+  }
+
+  :where(.page-register) .left-panel img {
+      width:220px;
+  }
+
+  :where(.page-register) .right-panel {
+      padding:40px 20px;
+  }
+}

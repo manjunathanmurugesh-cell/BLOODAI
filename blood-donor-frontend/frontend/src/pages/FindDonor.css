@@ -1,0 +1,867 @@
+/* Scoped to .page-find-donor — converted from the original find-donar.css */
+
+/* ===================================
+   Google Font
+=================================== */
+
+/* ===================================
+   Global
+=================================== */
+
+:where(.page-find-donor),
+:where(.page-find-donor) * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.page-find-donor {
+    background:#f8f9fa;
+    color:#333;
+}
+
+:where(.page-find-donor) a {
+    text-decoration:none;
+}
+
+:where(.page-find-donor) ul {
+    list-style:none;
+}
+
+/* ===================================
+   Navbar
+=================================== */
+
+:where(.page-find-donor) header {
+
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+:where(.page-find-donor) .navbar {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+}
+
+:where(.page-find-donor) .logo {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+:where(.page-find-donor) .logo i {
+
+    font-size:30px;
+    color:#d32f2f;
+
+}
+
+:where(.page-find-donor) .logo h2 {
+
+    color:#d32f2f;
+
+}
+
+:where(.page-find-donor) .nav-links {
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+:where(.page-find-donor) .nav-links a {
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+:where(.page-find-donor) .nav-links a:hover,
+:where(.page-find-donor) .nav-links a.active {
+
+    color:#d32f2f;
+
+}
+
+:where(.page-find-donor) .login-btn {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+:where(.page-find-donor) .login-btn:hover {
+
+    background:#b71c1c;
+
+}
+
+/* ===================================
+   Hero
+=================================== */
+
+:where(.page-find-donor) .hero {
+
+    margin-top:100px;
+
+    background:linear-gradient(135deg,#d32f2f,#ff5252);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+:where(.page-find-donor) .hero h1 {
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+:where(.page-find-donor) .hero p {
+
+    font-size:18px;
+
+}
+
+/* ===================================
+   Search
+=================================== */
+
+:where(.page-find-donor) .search-section {
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:0 20px;
+
+}
+
+:where(.page-find-donor) .search-card {
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+:where(.page-find-donor) .search-card h2 {
+
+    color:#d32f2f;
+
+    margin-bottom:30px;
+
+}
+
+:where(.page-find-donor) .search-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+:where(.page-find-donor) .input-box {
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+:where(.page-find-donor) .input-box label {
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+:where(.page-find-donor) .input-box input,
+:where(.page-find-donor) .input-box select {
+
+    padding:14px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+:where(.page-find-donor) .input-box input:focus,
+:where(.page-find-donor) .input-box select:focus {
+
+    outline:none;
+
+    border-color:#d32f2f;
+
+}
+
+:where(.page-find-donor) .search-btn-area {
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+:where(.page-find-donor) .search-btn-area button {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+:where(.page-find-donor) .search-btn-area button:hover {
+
+    background:#b71c1c;
+
+    transform:translateY(-4px);
+
+}
+
+/* ===================================
+   Donor Section
+=================================== */
+
+:where(.page-find-donor) .donor-section {
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+    padding:0 20px;
+
+}
+
+:where(.page-find-donor) .donor-section h2 {
+
+    text-align:center;
+
+    color:#d32f2f;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+:where(.page-find-donor) .donor-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===================================
+   Donor Card
+=================================== */
+
+:where(.page-find-donor) .donor-card {
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+:where(.page-find-donor) .donor-card:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(211,47,47,.18);
+
+}
+
+/* ===================================
+   Card Header
+=================================== */
+
+:where(.page-find-donor) .card-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+:where(.page-find-donor) .profile {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+:where(.page-find-donor) .avatar {
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+}
+
+:where(.page-find-donor) .profile h3 {
+
+    margin-bottom:5px;
+
+    color:#222;
+
+}
+
+:where(.page-find-donor) .location {
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+:where(.page-find-donor) .location i {
+
+    color:#d32f2f;
+
+    margin-right:5px;
+
+}
+
+/* ===================================
+   Blood Badge
+=================================== */
+
+:where(.page-find-donor) .blood-badge {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+/* ===================================
+   Card Body
+=================================== */
+
+:where(.page-find-donor) .card-body {
+
+    margin-top:20px;
+
+}
+
+:where(.page-find-donor) .card-body p {
+
+    margin-bottom:14px;
+
+    color:#555;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+:where(.page-find-donor) .card-body i {
+
+    color:#d32f2f;
+
+    width:20px;
+
+}
+
+/* ===================================
+   Status Badge
+=================================== */
+
+:where(.page-find-donor) .status {
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+:where(.page-find-donor) .available {
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+:where(.page-find-donor) .unavailable {
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+
+/* ===================================
+   Card Footer
+=================================== */
+
+:where(.page-find-donor) .card-footer {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+:where(.page-find-donor) .call-btn,
+:where(.page-find-donor) .email-btn {
+
+    flex:1;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+:where(.page-find-donor) .call-btn {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+}
+
+:where(.page-find-donor) .call-btn:hover {
+
+    background:#b71c1c;
+
+    transform:translateY(-3px);
+
+}
+
+:where(.page-find-donor) .email-btn {
+
+    background:#fff;
+
+    border:2px solid #d32f2f;
+
+    color:#d32f2f;
+
+}
+
+:where(.page-find-donor) .email-btn:hover {
+
+    background:#d32f2f;
+
+    color:#fff;
+
+}
+
+/* ===================================
+   Footer
+=================================== */
+
+:where(.page-find-donor) footer {
+
+    background:#b71c1c;
+
+    color:#fff;
+
+    margin-top:80px;
+
+    padding:50px 20px;
+
+}
+
+:where(.page-find-donor) .footer-content {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+:where(.page-find-donor) .footer-content h2 {
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+:where(.page-find-donor) .footer-content p {
+
+    color:#f5f5f5;
+
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+}
+
+:where(.page-find-donor) .social-icons {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin:25px 0;
+
+}
+
+:where(.page-find-donor) .social-icons a {
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#d32f2f;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+:where(.page-find-donor) .social-icons a:hover {
+
+    background:#ffebee;
+
+    transform:translateY(-5px);
+
+}
+
+:where(.page-find-donor) footer hr {
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.3);
+
+    margin:25px 0;
+
+}
+
+:where(.page-find-donor) .copyright {
+
+    font-size:14px;
+
+}
+
+/* ===================================
+   Scroll Animation
+=================================== */
+
+:where(.page-find-donor) .donor-card {
+
+    animation:page-find-donor-fadeUp .6s ease;
+
+}
+
+@keyframes page-find-donor-fadeUp {
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media(max-width:992px) {
+  :where(.page-find-donor) .navbar {
+
+      flex-direction:column;
+
+      gap:20px;
+
+  }
+
+  :where(.page-find-donor) .nav-links {
+
+      flex-wrap:wrap;
+
+      justify-content:center;
+
+  }
+
+  :where(.page-find-donor) .search-grid {
+
+      grid-template-columns:repeat(2,1fr);
+
+  }
+}
+
+@media(max-width:768px) {
+  :where(.page-find-donor) .hero h1 {
+
+      font-size:36px;
+
+  }
+
+  :where(.page-find-donor) .hero p {
+
+      font-size:16px;
+
+  }
+
+  :where(.page-find-donor) .search-grid {
+
+      grid-template-columns:1fr;
+
+  }
+
+  :where(.page-find-donor) .donor-grid {
+
+      grid-template-columns:1fr;
+
+  }
+
+  :where(.page-find-donor) .card-footer {
+
+      flex-direction:column;
+
+  }
+
+  :where(.page-find-donor) .call-btn,
+  :where(.page-find-donor) .email-btn {
+
+      width:100%;
+
+  }
+
+  :where(.page-find-donor) .nav-links {
+
+      gap:15px;
+
+      flex-wrap:wrap;
+
+  }
+
+  :where(.page-find-donor) .login-btn {
+
+      width:100%;
+
+      text-align:center;
+
+  }
+
+  :where(.page-find-donor) .footer-content h2 {
+
+      font-size:24px;
+
+  }
+
+  :where(.page-find-donor) .social-icons {
+
+      flex-wrap:wrap;
+
+  }
+}
+
+@media(max-width:480px) {
+  :where(.page-find-donor) .navbar {
+
+      padding:15px;
+
+  }
+
+  :where(.page-find-donor) .logo h2 {
+
+      font-size:22px;
+
+  }
+
+  :where(.page-find-donor) .hero {
+
+      padding:50px 15px;
+
+  }
+
+  :where(.page-find-donor) .hero h1 {
+
+      font-size:30px;
+
+  }
+
+  :where(.page-find-donor) .search-card {
+
+      padding:20px;
+
+  }
+
+  :where(.page-find-donor) .search-card h2 {
+
+      font-size:24px;
+
+  }
+
+  :where(.page-find-donor) .donor-card {
+
+      padding:20px;
+
+  }
+
+  :where(.page-find-donor) .avatar {
+
+      width:55px;
+
+      height:55px;
+
+      font-size:22px;
+
+  }
+
+  :where(.page-find-donor) .blood-badge {
+
+      font-size:16px;
+
+      padding:8px 14px;
+
+  }
+}

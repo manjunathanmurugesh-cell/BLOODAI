@@ -1,0 +1,389 @@
+/* Scoped to .page-become-donor — converted from the original become-donar.css */
+
+/* ===============================
+   Google Font
+================================== */
+
+:where(.page-become-donor),
+:where(.page-become-donor) * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.page-become-donor {
+    background:linear-gradient(135deg,#d32f2f,#ef5350,#ff8a80);
+    min-height:100vh;
+    padding:120px 20px 40px;
+}
+
+:where(.page-become-donor) .container {
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+:where(.page-become-donor) .card {
+    width:100%;
+    max-width:950px;
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+:where(.page-become-donor) .header {
+    text-align:center;
+    margin-bottom:35px;
+}
+
+:where(.page-become-donor) .header i {
+    font-size:60px;
+    color:#d32f2f;
+    margin-bottom:15px;
+}
+
+:where(.page-become-donor) .header h1 {
+    color:#d32f2f;
+    margin-bottom:10px;
+}
+
+:where(.page-become-donor) .header p {
+    color:#666;
+}
+
+/* ===============================
+   Progress Bar
+================================== */
+
+:where(.page-become-donor) .progress-bar {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:40px 0;
+}
+
+:where(.page-become-donor) .step {
+    text-align:center;
+}
+
+:where(.page-become-donor) .circle {
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#ddd;
+    color:#555;
+    display:flex;    
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    margin:auto;
+    transition:.3s;
+}
+
+:where(.page-become-donor) .step.active .circle {
+    background:#d32f2f;
+    color:#fff;
+}
+
+:where(.page-become-donor) .step p {
+    margin-top:8px;
+    font-size:14px;
+}
+
+:where(.page-become-donor) .line {
+    flex:1;
+    height:4px;
+    background:#ddd;
+    margin:0 10px;
+}
+
+/* ===============================
+   Form Step
+================================== */
+
+:where(.page-become-donor) .form-step {
+    display:none;
+}
+
+:where(.page-become-donor) .form-step.active {
+    display:block;
+    animation:page-become-donor-fade .4s ease;
+}
+
+@keyframes page-become-donor-fade {
+
+    from{
+        opacity:0;
+        transform:translateX(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* ===============================
+   Section
+================================== */
+
+:where(.page-become-donor) .form-step h2 {
+    color:#d32f2f;
+    margin-bottom:25px;
+}
+
+:where(.page-become-donor) .grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+:where(.page-become-donor) .input-box {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+:where(.page-become-donor) .input-box label {
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+:where(.page-become-donor) .input-box input,
+:where(.page-become-donor) .input-box select,
+:where(.page-become-donor) .input-box textarea {
+
+    padding:14px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+:where(.page-become-donor) .input-box textarea {
+    resize:none;
+}
+
+:where(.page-become-donor) .input-box input:focus,
+:where(.page-become-donor) .input-box select:focus,
+:where(.page-become-donor) .input-box textarea:focus {
+
+    outline:none;
+    border-color:#d32f2f;
+    box-shadow:0 0 10px rgba(211,47,47,.2);
+
+}
+
+:where(.page-become-donor) .radio-group {
+    display:flex;
+    gap:25px;
+    margin-top:10px;
+}
+
+/* ===============================
+   Review Box
+================================== */
+
+:where(.page-become-donor) .review-box {
+
+    background:#fff5f5;
+    border-left:6px solid #d32f2f;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:25px;
+
+}
+
+:where(.page-become-donor) .review-box ul {
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* ===============================
+   Checkbox
+================================== */
+
+:where(.page-become-donor) .checkbox {
+    margin:20px 0;
+}
+
+/* ===============================
+   Buttons
+================================== */
+
+:where(.page-become-donor) .buttons {
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:35px;
+
+}
+
+:where(.page-become-donor) .prevBtn,
+:where(.page-become-donor) .nextBtn,
+:where(.page-become-donor) .submitBtn {
+
+    border:none;
+    padding:14px 30px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+:where(.page-become-donor) .prevBtn {
+
+    background:#757575;
+    color:#fff;
+
+}
+
+:where(.page-become-donor) .nextBtn,
+:where(.page-become-donor) .submitBtn {
+
+    background:#d32f2f;
+    color:#fff;
+
+}
+
+:where(.page-become-donor) .prevBtn:hover,
+:where(.page-become-donor) .nextBtn:hover,
+:where(.page-become-donor) .submitBtn:hover {
+
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+/* ===============================
+   Responsive
+================================== */
+
+@media(max-width:768px) {
+  :where(.page-become-donor) .grid {
+      grid-template-columns:1fr;
+  }
+
+  :where(.page-become-donor) .progress-bar {
+      flex-wrap:wrap;
+      gap:15px;
+  }
+
+  :where(.page-become-donor) .line {
+      display:none;
+  }
+
+  :where(.page-become-donor) .buttons {
+      flex-direction:column;
+      gap:15px;
+  }
+
+  :where(.page-become-donor) .prevBtn,
+  :where(.page-become-donor) .nextBtn,
+  :where(.page-become-donor) .submitBtn {
+      width:100%;
+  }
+
+  :where(.page-become-donor) .card {
+      padding:25px;
+  }
+
+  :where(.page-become-donor) .navbar {
+      flex-direction:column;
+      gap:15px;
+  }
+
+  :where(.page-become-donor) .nav-links {
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:12px;
+  }
+
+  :where(.page-become-donor) .nav-links a {
+      font-size:14px;
+  }
+
+  :where(.page-become-donor) .login-btn {
+      padding:10px 18px;
+  }
+}
+
+/* ===============================
+   Navbar
+================================== */
+
+:where(.page-become-donor) header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+:where(.page-become-donor) .navbar {
+    max-width:1200px;
+    margin:auto;
+    padding:18px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+:where(.page-become-donor) .logo {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+:where(.page-become-donor) .logo i {
+    color:#d32f2f;
+    font-size:30px;
+}
+
+:where(.page-become-donor) .logo h2 {
+    color:#d32f2f;
+    font-size:24px;
+}
+
+:where(.page-become-donor) .nav-links {
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+:where(.page-become-donor) .nav-links a {
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+:where(.page-become-donor) .nav-links a:hover,
+:where(.page-become-donor) .nav-links a.active {
+    color:#d32f2f;
+}
+
+:where(.page-become-donor) .login-btn {
+    background:#d32f2f;
+    color:#fff;
+    text-decoration:none;
+    padding:11px 20px;
+    border-radius:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+:where(.page-become-donor) .login-btn:hover {
+    background:#b71c1c;
+    transform:translateY(-2px);
+}
