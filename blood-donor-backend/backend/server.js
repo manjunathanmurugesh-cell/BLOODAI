@@ -13,24 +13,17 @@ const referralRoutes = require("./routes/referralRoutes");
 
 const app = express();
 
-// Allowed frontend origins
+// Frontend origins allowed to call this backend
 const allowedOrigins = [
   "https://blood-donor-frontend-7da2.onrender.com",
   "http://localhost:5173",
   "http://127.0.0.1:5173",
 ];
 
-// CORS configuration
+// CORS must run before the API routes
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // Allow requests without an Origin header, e.g. server-to-server/health tools
-      if (!origin || allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-
-      return callback(new Error("CORS blocked: origin not allowed"));
-    },
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -38,7 +31,7 @@ app.use(
 
 app.use(express.json());
 
-// Health-check endpoint
+// Health check
 app.get("/api/health", (req, res) => {
   res.status(200).json({
     ok: true,
@@ -53,7 +46,7 @@ app.use("/api/hospitals", hospitalRoutes);
 app.use("/api/emergency", emergencyRoutes);
 app.use("/api/referrals", referralRoutes);
 
-// Fallback for unknown routes
+// Unknown route response
 app.use((req, res) => {
   res.status(404).json({
     message: `Route not found: ${req.method} ${req.originalUrl}`,
@@ -62,13 +55,7 @@ app.use((req, res) => {
 
 // Error handler
 app.use((err, req, res, next) => {
-  console.error("Server error:", err.message);
-
-  if (err.message && err.message.startsWith("CORS blocked")) {
-    return res.status(403).json({
-      message: "CORS blocked: frontend origin is not allowed",
-    });
-  }
+  console.error("Request error:", err.message);
 
   res.status(500).json({
     message: "Internal server error",
@@ -77,14 +64,18 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-connectDB()
-  .then(() => {
+async function startServer() {
+  try {
+    await connectDB();
+
     app.listen(PORT, "0.0.0.0", () => {
       console.log("MongoDB connected");
       console.log(`BloodAI backend running on port ${PORT}`);
     });
-  })
-  .catch((error) => {
+  } catch (error) {
     console.error("MongoDB connection failed:", error.message);
     process.exit(1);
-  });
+  }
+}
+
+startServer();
